@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppContainer } from 'react-hot-loader';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { configureStore, subscribeStore } from 'client/stores';
 import { initialState } from 'client/stores/images';
@@ -17,11 +17,11 @@ const render = () => {
   ReactDOM.render(
     <AppContainer>
       <Provider store={store}>
-        <BrowserRouter>
+        <HashRouter>
           <Switch>
             <Route path="/" component={Root} />
           </Switch>
-        </BrowserRouter>
+        </HashRouter>
       </Provider>
     </AppContainer>,
     document.getElementById('app'),

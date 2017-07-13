@@ -17,7 +17,7 @@ export default {
   output: {
     path: path.join(__dirname, '../dist'),
     filename: '[name].[chunkhash].js',
-    publicPath: '/image-viewer',
+    publicPath: '',
   },
 
   target: 'web',
