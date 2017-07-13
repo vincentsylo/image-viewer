@@ -4,7 +4,9 @@
   "description": "A quick little web application to anonymously view and share images. Not for production use.",
   "main": "index.js",
   "scripts": {
+    "build": "npm run lint && webpack --env=dist -p",
     "lint": "eslint src",
+    "start": "webpack-dev-server --env=dev",
     "test": "jest"
   },
   "pre-commit": [
@@ -14,16 +16,42 @@
   "author": "Vincent Lo",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.1",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-module-resolver": "2.7.1",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-0": "6.24.1",
+    "clean-webpack-plugin": "0.1.16",
+    "css-loader": "0.28.4",
     "eslint": "4.2.0",
     "eslint-config-airbnb": "^15.0.2",
     "eslint-plugin-import": "2,6,1",
     "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.1.0",
+    "html-webpack-plugin": "2.29.0",
     "jest": "20.0.4",
+    "nodemon": "1.11.0",
+    "on-build-webpack": "0.1.0",
+    "postcss-cssnext": "3.0.2",
+    "postcss-custom-properties": "6.1.0",
+    "postcss-import": "10.0.0",
+    "postcss-loader": "2.0.6",
     "pre-commit": "1.2.2",
+    "style-loader": "0.18.2",
     "stylelint": "7.13.0",
     "stylelint-config-standard": "16.0.0",
     "stylelint-no-browser-hacks": "1.0.2",
-    "stylelint-order": "0.5.0"
+    "stylelint-order": "0.5.0",
+    "webpack": "3.2.0",
+    "webpack-dev-server": "2.5.1",
+    "webpack-node-externals": "1.6.0",
+    "webpack-postcss-tools": "1.1.2",
+    "write-file-webpack-plugin": "4.1.0"
+  },
+  "dependencies": {
+    "react-hot-loader": "next"
   }
 }

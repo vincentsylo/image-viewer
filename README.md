@@ -12,7 +12,7 @@ yarn start
 - React.js
 - CSS Modules
 - PostCSS
-- Redis
+- Postgres
 - ESLint (Airbnb)
 - Jest
 
