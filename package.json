@@ -5,11 +5,15 @@
   "main": "index.js",
   "scripts": {
     "lint": "",
-    "test": ""
+    "test": "jest"
   },
+  "pre-commit": [
+    "test"
+  ],
   "author": "Vincent Lo",
   "license": "ISC",
   "devDependencies": {
+    "jest": "20.0.4",
     "pre-commit": "1.2.2"
   }
 }
