@@ -6,3 +6,8 @@ body,
   font-family: 'Nunito', sans-serif;
   height: 100%;
 }
+
+.root {
+  background-color: var(--primary);
+  height: 100%;
+}

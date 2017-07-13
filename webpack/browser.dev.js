@@ -33,6 +33,7 @@ export default {
     host: '0.0.0.0',
     inline: false,
     port: 8080,
+    historyApiFallback: true,
   },
 
   module: {

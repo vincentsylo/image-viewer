@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter } from 'react-router-dom';
 import { AppContainer } from 'react-hot-loader';
-import Root from './views/Root';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Root from './features/Root';
 
 const render = () => {
   ReactDOM.render(
     <AppContainer>
-      <HashRouter>
-        <Root />
-      </HashRouter>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" component={Root} />
+        </Switch>
+      </BrowserRouter>
     </AppContainer>,
     document.getElementById('app'),
   );
