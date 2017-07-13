@@ -30,6 +30,8 @@ Several assumptions have been made:
 1. Task is primarily frontend due to described role.
 1. Consistency is preferred over minor performance gains - prefer stateful components over pure functions.
 1. Browser compatibility - modern browsers are only required.
+1. We don't want to test React itself. Linting, flow types, can provide more value (at times) in terms of governing the codebase (for the frontend).
+There is significant value in unit testing the backend however.
 
 ## Recommendations
 Due to time constraints, there are several recommendations to extend the project further.

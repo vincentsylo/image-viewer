@@ -1,5 +1,3 @@
-import uuid from 'uuid';
-
 export const initialState = {
   keyword: '',
   collection: [{
@@ -15,8 +13,8 @@ export const initialState = {
   }],
 };
 
-const IMAGE_KEYWORD_UPDATE = 'IMAGE_KEYWORD_UPDATE';
-const IMAGE_UPLOAD = 'IMAGE_UPLOAD';
+export const IMAGE_KEYWORD_UPDATE = 'IMAGE_KEYWORD_UPDATE';
+export const IMAGE_UPLOAD = 'IMAGE_UPLOAD';
 
 export default function images(state = initialState, action) {
   switch (action.type) {
@@ -50,9 +48,6 @@ export function updateKeyword(keyword) {
 export function uploadImage(newImage) {
   return {
     type: IMAGE_UPLOAD,
-    newImage: {
-      ...newImage,
-      id: uuid.v4(),
-    },
+    newImage,
   };
 }

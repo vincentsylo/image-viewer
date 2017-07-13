@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
+import uuid from 'uuid';
 import Container from 'client/common/Container';
 import TextInput from 'client/common/TextInput';
 import { uploadImage } from 'client/stores/images';
@@ -28,7 +29,7 @@ export default class Upload extends Component {
     const { dispatch, history } = this.props;
     const { name, image, code } = this.state;
 
-    dispatch(uploadImage({ name, image, code }));
+    dispatch(uploadImage({ name, image, code, id: uuid.v4() }));
     history.push('/');
   };
 

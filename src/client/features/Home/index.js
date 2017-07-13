@@ -17,6 +17,8 @@ export default class Home extends Component {
     dispatch: PropTypes.func.isRequired,
   };
 
+  images = [];
+
   clearSearch = (e) => {
     e.preventDefault();
     const { dispatch } = this.props;
@@ -39,7 +41,13 @@ export default class Home extends Component {
           {
             filteredImages.length > 0 ? _.map(filteredImages, image => (
               <Container key={image.id} title={image.name} subtitle={image.code} className={styles.container}>
-                <img src={image.image} alt={image.name} className={styles.image} />
+                <img
+                  ref={(ref) => { this.images[image.id] = ref; }}
+                  src={image.image}
+                  alt={image.name}
+                  className={styles.image}
+                  onError={() => { this.images[image.id].src = 'http://placehold.it/300x250&text=Not found'; }}
+                />
               </Container>
             )) : (
               <button onClick={this.clearSearch} className={styles.clear}>No images found. Clear your search criteria?</button>
