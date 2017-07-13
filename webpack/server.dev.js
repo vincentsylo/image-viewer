@@ -3,6 +3,7 @@ import OnBuildPlugin from 'on-build-webpack';
 import nodemon from 'nodemon';
 import nodeExternals from 'webpack-node-externals';
 import WriteFilePlugin from 'write-file-webpack-plugin';
+
 let serverStarted = false;
 
 export default {
@@ -12,7 +13,7 @@ export default {
 
   entry: [
     'babel-polyfill',
-    './server.js',
+    './server',
   ],
 
   output: {
@@ -33,7 +34,7 @@ export default {
         use: [
           'babel-loader',
         ],
-        exclude: /node_modules/
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
@@ -59,6 +60,6 @@ export default {
 
         serverStarted = true;
       }
-    })
+    }),
   ],
-}
+};

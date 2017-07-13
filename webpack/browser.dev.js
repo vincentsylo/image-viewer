@@ -73,4 +73,4 @@ export default {
       template: './index.ejs',
     }),
   ],
-}
+};
