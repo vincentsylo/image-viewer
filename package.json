@@ -1,0 +1,15 @@
+{
+  "name": "image-viewer",
+  "version": "0.0.1",
+  "description": "A quick little web application to anonymously view and share images. Not for production use.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "",
+    "test": ""
+  },
+  "author": "Vincent Lo",
+  "license": "ISC",
+  "devDependencies": {
+    "pre-commit": "1.2.2"
+  }
+}
