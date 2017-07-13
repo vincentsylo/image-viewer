@@ -3,17 +3,25 @@
 html,
 body,
 :global(#app) {
+  background-color: var(--white);
+  display: inline-block;
   font-family: 'Nunito', sans-serif;
   height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .root {
-  background-color: var(--lightGrey);
   height: 100%;
 }
 
 .header {
-  background-color: var(--light);
+  background-color: var(--lightGrey);
   border-bottom: 1px solid var(--grey);
   display: flex;
   flex-direction: row;
@@ -23,7 +31,7 @@ body,
 }
 
 .title {
-  color: var(--darkGrey);
+  color: var(--primary);
   font-size: 14px;
   text-decoration: none;
 
@@ -34,8 +42,8 @@ body,
   }
 }
 
-.addNew {
-  color: var(--darkGrey);
+.upload {
+  color: var(--primary);
   text-decoration: none;
 }
 
@@ -50,6 +58,6 @@ body,
 .content {
   margin: 0 auto;
   padding: 8px;
-  width: 768px;
+  max-width: 1024px;
 }
 

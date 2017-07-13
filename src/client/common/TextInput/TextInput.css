@@ -16,10 +16,22 @@
   border: 1px solid var(--grey);
   flex: 1;
   padding: 8px;
+
+  &:invalid {
+    border-color: var(--error);
+  }
 }
 
-.requiredIcon {
-  color: var(--error);
+.icon {
+  color: var(--darkGrey);
   position: absolute;
-  right: 20px;
+  right: 16px;
+}
+
+.required {
+  color: var(--error);
+}
+
+.hasIcon {
+  right: 40px;
 }

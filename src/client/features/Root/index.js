@@ -12,7 +12,7 @@ export default class Root extends Component {
         <header className={styles.header}>
           <nav className={styles.navigation}>
             <Link to="/" className={styles.title}><h1>Image Viewer</h1></Link>
-            <Link to="/upload" className={styles.addNew}><i className="fa fa-plus" /> Upload</Link>
+            <Link to="/upload" className={styles.upload}><i className="fa fa-plus" /> Upload</Link>
           </nav>
         </header>
 

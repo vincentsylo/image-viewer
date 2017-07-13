@@ -2,13 +2,26 @@
   background-color: var(--light);
   border: 1px solid var(--grey);
   border-radius: 2px;
+  display: flex;
+  flex-direction: column;
 }
 
-.title {
+.header {
+  align-items: center;
   background-color: var(--white);
   border-bottom: 1px solid var(--grey);
-  font-size: 18px;
-  font-weight: 700;
+  display: flex;
   padding: 16px;
 }
 
+.title {
+  font-size: 18px;
+  flex: 1;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--grey);
+  font-size: 12px;
+  text-align: right;
+}

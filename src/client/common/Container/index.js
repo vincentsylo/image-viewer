@@ -8,19 +8,24 @@ export default class Container extends Component {
     children: PropTypes.node.isRequired,
     title: PropTypes.string.isRequired,
     className: PropTypes.string,
+    subtitle: PropTypes.string,
   };
 
   static defaultProps = {
     className: null,
+    subtitle: null,
   };
 
   render() {
-    const { children, title, className } = this.props;
+    const { children, title, className, subtitle } = this.props;
 
     return (
       <div className={cx(styles.root, className)}>
-        <div className={styles.title}>{title}</div>
-        <div className={styles.content}>{children}</div>
+        <div className={styles.header}>
+          <span className={styles.title}>{title}</span>
+          { subtitle ? <span className={styles.subtitle}>{subtitle}</span> : null }
+        </div>
+        {children}
       </div>
     );
   }

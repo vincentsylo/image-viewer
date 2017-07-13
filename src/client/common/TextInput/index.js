@@ -6,12 +6,15 @@ import styles from './TextInput.css';
 export default class TextInput extends Component {
   static propTypes = {
     id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
+    label: PropTypes.string,
     required: PropTypes.bool,
+    icon: PropTypes.string,
   };
 
   static defaultProps = {
     required: false,
+    label: null,
+    icon: null,
   };
 
   state = {
@@ -25,14 +28,25 @@ export default class TextInput extends Component {
   };
 
   render() {
-    const { id, label, required, ...rest } = this.props;
+    const { id, label, required, icon, ...rest } = this.props;
     const { value } = this.state;
+
+    const requiredClassName = cx(
+      styles.icon,
+      styles.required,
+      {
+        [styles.hasIcon]: icon,
+      },
+      'fa fa-asterisk',
+    );
+    const iconClassName = cx(styles.icon, icon);
 
     return (
       <div className={styles.root}>
-        <label htmlFor={id} className={styles.label}>{label}</label>
-        <input type="text" id={id} className={styles.input} value={value} onChange={this.onChange} {...rest} />
-        { required ? <span className={cx(styles.requiredIcon, 'fa fa-asterisk')} /> : null }
+        { label ? <label htmlFor={id} className={styles.label}>{label}</label> : null }
+        <input type="text" id={id} className={styles.input} value={value} onChange={this.onChange} required={required} {...rest} />
+        { required ? <span className={requiredClassName} /> : null }
+        { icon ? <span className={iconClassName} /> : null }
       </div>
     );
   }

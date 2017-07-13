@@ -10,3 +10,7 @@ The folder structure is as follows:
     - Features of the web application.
 - /styles
     - Common styles across the application.
+- /stores
+    - All Redux stores based off the Ducks pattern.
+- /utils
+    - All common utility functions.

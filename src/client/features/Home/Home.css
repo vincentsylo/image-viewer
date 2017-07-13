@@ -1,0 +1,30 @@
+.images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.container {
+  margin: 8px;
+}
+
+.image {
+  flex: 1;
+}
+
+.searchContainer {
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+.clear {
+  background: none;
+  border: 1px solid var(--grey);
+  border-radius: 2px;
+  padding: 16px;
+  margin: 16px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
