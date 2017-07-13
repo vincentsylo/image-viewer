@@ -8,6 +8,48 @@ body,
 }
 
 .root {
-  background-color: var(--primary);
+  background-color: var(--lightGrey);
   height: 100%;
 }
+
+.header {
+  background-color: var(--light);
+  border-bottom: 2px solid var(--grey);
+  display: flex;
+  flex-direction: row;
+  font-family: 'Roboto', sans-serif;
+  height: 60px;
+  padding: 8px;
+}
+
+.title {
+  color: var(--darkGrey);
+  font-size: 14px;
+  text-decoration: none;
+
+  & h1 {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.addNew {
+  color: var(--darkGrey);
+  text-decoration: none;
+}
+
+.navigation {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  width: 1024px;
+}
+
+.content {
+  margin: 0 auto;
+  padding: 8px;
+  width: 768px;
+}
+

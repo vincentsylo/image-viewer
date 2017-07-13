@@ -1,4 +1,4 @@
-# Client
+# Client folder
 
 The client folder contains all client side code.
 

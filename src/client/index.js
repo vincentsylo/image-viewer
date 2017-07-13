@@ -20,8 +20,8 @@ const render = () => {
 render();
 
 if (module.hot) {
-  module.hot.accept('./views/Root', () => {
-    const NextRootContainer = require('./views/Root'); // eslint-disable-line
+  module.hot.accept('./features/Root', () => {
+    const NextRootContainer = require('./features/Root'); // eslint-disable-line
     render(NextRootContainer);
   });
 }
