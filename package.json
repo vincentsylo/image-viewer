@@ -4,7 +4,7 @@
   "description": "A quick little web application to anonymously view and share images. Not for production use.",
   "main": "index.js",
   "scripts": {
-    "build": "npm run lint && webpack --env=prod -p",
+    "build": "npm run lint && npm test && webpack --env=prod -p",
     "lint": "eslint src",
     "start": "webpack-dev-server --env=dev",
     "test": "jest"

@@ -1,7 +1,7 @@
 language: node_js
 
 node_js:
-  - "7.9.0"
+  - "8.0.0"
 
 cache:
   yarn: true
@@ -9,6 +9,9 @@ cache:
     - node_modules
 
 install:
+  - yarn
+
+script:
   - npm run build
 
 deploy:
