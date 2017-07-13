@@ -1,4 +1,6 @@
 # Image Viewer
+[![Build Status](https://travis-ci.org/vincentsylo/image-viewer.svg?branch=master)](https://travis-ci.org/vincentsylo/image-viewer)
+
 > A quick little web application to anonymously view and share images. Not for production use.
 
 ## Installation
