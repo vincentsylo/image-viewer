@@ -4,15 +4,21 @@
   "description": "A quick little web application to anonymously view and share images. Not for production use.",
   "main": "index.js",
   "scripts": {
-    "lint": "",
+    "lint": "eslint src",
     "test": "jest"
   },
   "pre-commit": [
+    "lint",
     "test"
   ],
   "author": "Vincent Lo",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "4.2.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "2,6,1",
+    "eslint-plugin-jsx-a11y": "5.1.1",
+    "eslint-plugin-react": "7.1.0",
     "jest": "20.0.4",
     "pre-commit": "1.2.2"
   }
