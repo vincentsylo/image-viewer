@@ -1,0 +1,25 @@
+.root {
+  align-items: center;
+  display: flex;
+  margin: 8px 0;
+  position: relative;
+  width: 100%;
+}
+
+.label {
+  font-weight: 700;
+  width: 150px;
+}
+
+.input {
+  border-radius: 2px;
+  border: 1px solid var(--grey);
+  flex: 1;
+  padding: 8px;
+}
+
+.requiredIcon {
+  color: var(--error);
+  position: absolute;
+  right: 20px;
+}

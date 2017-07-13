@@ -1,10 +1,11 @@
 :root {
   --primary: #378aff;
   --secondary: #617b9b;
+  --white: #fff;
   --light: #fafafa;
-  --grey: #999;
+  --grey: #ddd;
   --darkGrey: #333;
-  --lightGrey: #dcdcdc;
+  --lightGrey: #efefef;
   --warning: #ffac37;
   --error: #ff4b4a;
   --success: #029403;

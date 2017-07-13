@@ -1,0 +1,14 @@
+.root {
+  background-color: var(--light);
+  border: 1px solid var(--grey);
+  border-radius: 2px;
+}
+
+.title {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--grey);
+  font-size: 18px;
+  font-weight: 700;
+  padding: 16px;
+}
+

@@ -14,7 +14,7 @@ body,
 
 .header {
   background-color: var(--light);
-  border-bottom: 2px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
   display: flex;
   flex-direction: row;
   font-family: 'Roboto', sans-serif;
