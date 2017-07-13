@@ -33,13 +33,6 @@ export default {
     host: '0.0.0.0',
     inline: false,
     port: 8080,
-    proxy: [
-      {
-        context: '**',
-        target: 'http://localhost:8081',
-        secure: false,
-      },
-    ],
   },
 
   module: {
@@ -70,7 +63,7 @@ export default {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new HtmlPlugin({
-      template: './index.ejs',
+      template: './client/index.ejs',
     }),
   ],
 };

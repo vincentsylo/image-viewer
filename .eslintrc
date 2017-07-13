@@ -9,7 +9,8 @@
   "rules": {
     "import/no-extraneous-dependencies": "off",
     "max-len": ["error", 200, 4],
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "react/prefer-stateless-function": "off"
   },
   "settings": {
     "import/resolver": {

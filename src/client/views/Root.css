@@ -1,0 +1,8 @@
+@import 'normalize.css';
+
+html,
+body,
+:global(#app) {
+  font-family: 'Nunito', sans-serif;
+  height: 100%;
+}
